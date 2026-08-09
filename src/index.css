@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+:root {
+  /* Dark terminal theme (default) */
+  --bg: #0d0d0d;
+  --fg: #ffffff;
+  --border: #2a2a2a;
+  --muted: #a1a1a1;
+  --accent: #00ff9c;
+  --accent-dim: #00ff9c22;
+  --traffic-red: #ff5f56;
+  --traffic-yellow: #ffbd2e;
+  --traffic-green: #27c93f;
+}
+
+:root.light {
+  /* Light terminal theme variant */
+  --bg: #f5f5f5;
+  --fg: #0d0d0d;
+  --border: #d4d4d4;
+  --muted: #555555;
+  --accent: #00875a;
+  --accent-dim: #00875a18;
+  --traffic-red: #ff5f56;
+  --traffic-yellow: #ffbd2e;
+  --traffic-green: #27c93f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle background grid pattern */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+
+/* Accent text */
+.text-accent {
+  color: var(--accent);
+}
+
+/* Accent border */
+.border-accent {
+  border-color: var(--accent);
+}
+
+/* Accent background */
+.bg-accent {
+  background-color: var(--accent);
+}
+
+/* Accent glow on hover */
+.accent-glow:hover {
+  box-shadow: 0 0 20px var(--accent-dim);
+}
+
+/* Custom scrollbar — terminal feel */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border: 2px solid var(--bg);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fg);
+}
+
+/* Blinking terminal cursor */
+@keyframes cursor-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+.cursor-blink {
+  animation: cursor-blink 1s step-end infinite;
+}
+
+/* Selection */
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
