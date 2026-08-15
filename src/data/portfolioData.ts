@@ -77,7 +77,7 @@ export const portfolioData = {
   ] as Stat[],
 
   // Resume link — recruiters look for this first
-  resumeUrl: '#',
+  resumeUrl: '/resume.pdf',
 
   skills: [
     {
@@ -136,21 +136,20 @@ export const portfolioData = {
   ] as CertificateItem[],
 
   socials: [
-    { label: 'GitHub', href: '#', icon: 'github' },
-    { label: 'LinkedIn', href: '#', icon: 'linkedin' },
-    { label: 'Email', href: '#', icon: 'mail' },
-    { label: 'Twitter/X', href: '#', icon: 'twitter' },
+    { label: 'GitHub', href: 'https://github.com/gautamkumar3036', icon: 'github' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/gautamkumar3036/?isSelfProfile=false', icon: 'linkedin' },
+    { label: 'Email', href: 'mailto:[EMAIL_ADDRESS]', icon: 'mail' },
+    { label: 'Twitter/X', href: 'https://twitter.com/gautamkumar3036', icon: 'twitter' },
   ] as SocialLink[],
 
   contact: [
-    { label: 'Email', href: '#' },
-    { label: 'LinkedIn', href: '#' },
-    { label: 'GitHub', href: '#' },
-    { label: 'Resume', href: '#' },
+    { label: 'Email', href: 'mailto:[EMAIL_ADDRESS]' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/gautamkumar3036/?isSelfProfile=false' },
+    { label: 'GitHub', href: 'https://github.com/gautamkumar3036' },
+    { label: 'Resume', href: '/resume.pdf' },
   ] as ContactLink[],
 
-  // Where the "Contact Me" / "hit_me_up" button points (placeholder for now).
-  contactButtonHref: '#contact',
+
 };
 
 export type PortfolioData = typeof portfolioData;

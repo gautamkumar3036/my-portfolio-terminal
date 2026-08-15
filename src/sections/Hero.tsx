@@ -83,6 +83,9 @@ export default function Hero() {
             </motion.a>
             <motion.a
               href={portfolioData.resumeUrl}
+              download="resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="inline-flex items-center gap-2 rounded border border-[var(--border)] px-4 py-2 text-sm transition-colors hover:border-accent hover:text-accent"

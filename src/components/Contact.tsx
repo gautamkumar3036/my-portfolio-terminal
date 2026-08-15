@@ -19,6 +19,9 @@ export default function Contact({ links, buttonHref }: Props) {
           <li key={link.label}>
             <a
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              download={link.href.endsWith('.pdf') ? 'resume.pdf' : undefined}
               className="group inline-flex items-center gap-2 text-sm text-[var(--fg)] hover:text-[var(--muted)]"
             >
               <span className="text-[var(--muted)]">→</span>
@@ -31,13 +34,7 @@ export default function Contact({ links, buttonHref }: Props) {
         ))}
       </ul>
 
-      <a
-        href={buttonHref}
-        className="inline-flex items-center gap-2 rounded border border-[var(--border)] px-4 py-2 text-sm transition-colors hover:bg-[var(--fg)] hover:text-[var(--bg)]"
-      >
-        Contact Me
-        <ArrowRight size={14} />
-      </a>
+
     </div>
   );
 }
