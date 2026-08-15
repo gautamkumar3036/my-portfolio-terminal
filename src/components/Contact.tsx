@@ -34,7 +34,13 @@ export default function Contact({ links, buttonHref }: Props) {
         ))}
       </ul>
 
-
+      <a
+        href={buttonHref}
+        className="inline-flex items-center gap-2 rounded border border-[var(--border)] px-4 py-2 text-sm transition-colors hover:bg-[var(--fg)] hover:text-[var(--bg)]"
+      >
+        Contact Me
+        <ArrowRight size={14} />
+      </a>
     </div>
   );
 }
