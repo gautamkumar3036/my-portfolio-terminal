@@ -149,7 +149,7 @@ export const portfolioData = {
     { label: 'Resume', href: '/resume.pdf' },
   ] as ContactLink[],
 
-
+  contactButtonHref: '#contact',
 };
 
 export type PortfolioData = typeof portfolioData;
