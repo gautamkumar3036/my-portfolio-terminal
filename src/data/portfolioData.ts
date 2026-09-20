@@ -111,28 +111,17 @@ export const portfolioData = {
   experience: [] as ExperienceItem[],
 
   certificates: [
-    {
-      title: 'AWS Certified Solutions Architect – Associate',
-      issuer: 'Amazon Web Services (AWS)',
-      issueDate: 'Jan 2024',
-      credentialId: 'AWS-ASA-2024-88392',
-      credentialUrl: 'https://aws.amazon.com/verification',
-      badgeUrl: '/aws-cert-badge.png',
-      skills: ['AWS', 'Cloud Architecture', 'Spring Boot', 'Microservices', 'Security'],
-      description:
-        'Demonstrates technical expertise in designing resilient, high-performing, secure, and cost-optimized architectural solutions on AWS.',
-    },
-    {
-      title: 'ed Solutions Architect – Associate',
-      issuer: 'Amazon Web Services (AWS)',
-      issueDate: 'Jan 2024',
-      credentialId: 'AWS-ASA-204-88392',
-      credentialUrl: 'https://aws.amazon.com/verification',
-      badgeUrl: '/aws-cert-badge.png',
-      skills: ['AWS', 'Cloud Architecture', 'Spring Boot', 'Microservices', 'Security'],
-      description:
-        'Demonstrates technical expertise in designing resilient, high-performing, secure, and cost-optimized architectural solutions on AWS.',
-    },
+    // {
+    //   title: 'ed Solutions Architect – Associate',
+    //   issuer: 'Amazon Web Services (AWS)',
+    //   issueDate: 'Jan 2024',
+    //   credentialId: 'AWS-ASA-204-88392',
+    //   credentialUrl: 'https://aws.amazon.com/verification',
+    //   badgeUrl: '/aws-cert-badge.png',
+    //   skills: ['AWS', 'Cloud Architecture', 'Spring Boot', 'Microservices', 'Security'],
+    //   description:
+    //     'Demonstrates technical expertise in designing resilient, high-performing, secure, and cost-optimized architectural solutions on AWS.',
+    // },
   ] as CertificateItem[],
 
   socials: [
@@ -149,6 +138,7 @@ export const portfolioData = {
     { label: 'Resume', href: '/resume.pdf' },
   ] as ContactLink[],
 
+  // Where the "Contact Me" / "hit_me_up" button points (placeholder for now).
   contactButtonHref: '#contact',
 };
 
