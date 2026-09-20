@@ -28,7 +28,7 @@ export type ExperienceItem = {
 export type SocialLink = {
   label: string;
   href: string;
-  icon: 'github' | 'linkedin' | 'mail' | 'twitter';
+  icon: 'github' | 'linkedin' | 'mail' | 'twitter' | 'leetcode';
 };
 
 export type ContactLink = {
@@ -127,6 +127,7 @@ export const portfolioData = {
   socials: [
     { label: 'GitHub', href: 'https://github.com/gautamkumar3036', icon: 'github' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/gautamkumar3036/?isSelfProfile=false', icon: 'linkedin' },
+    { label: 'LeetCode', href: 'https://leetcode.com/u/gautamkumar3036/', icon: 'leetcode' },
     { label: 'Email', href: 'mailto:[EMAIL_ADDRESS]', icon: 'mail' },
     { label: 'Twitter/X', href: 'https://twitter.com/gautamkumar3036', icon: 'twitter' },
   ] as SocialLink[],
@@ -135,6 +136,7 @@ export const portfolioData = {
     { label: 'Email', href: 'mailto:[EMAIL_ADDRESS]' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/gautamkumar3036/?isSelfProfile=false' },
     { label: 'GitHub', href: 'https://github.com/gautamkumar3036' },
+    { label: 'LeetCode', href: 'https://leetcode.com/u/gautamkumar3036/' },
     { label: 'Resume', href: '/resume.pdf' },
   ] as ContactLink[],
 

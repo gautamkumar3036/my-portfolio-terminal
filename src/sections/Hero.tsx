@@ -3,12 +3,14 @@ import { motion } from 'framer-motion';
 import { Mail, ArrowRight, Download } from 'lucide-react';
 import TerminalWindow from '@/components/TerminalWindow';
 import TypingText from '@/components/TypingText';
-import { GithubIcon, LinkedinIcon, TwitterIcon } from '@/components/BrandIcons';
+import { GithubIcon, LinkedinIcon, TwitterIcon, LeetcodeIcon, FivoIcon } from '@/components/BrandIcons';
 import { portfolioData } from '@/data/portfolioData';
 
 const socialIcons = {
   github: GithubIcon,
   linkedin: LinkedinIcon,
+  leetcode: LeetcodeIcon,
+  fivo: FivoIcon,
   mail: Mail,
   twitter: TwitterIcon,
 };
